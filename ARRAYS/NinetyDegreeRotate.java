@@ -9,6 +9,7 @@ public class NinetyDegreeRotate {
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader(isr);
 		
+		//because this program is only possible for a square matrix, hence we are just asking for size
 		System.out.println("Enter the size of the matrix");
 		int n = Integer.parseInt(br.readLine());
 		
@@ -45,6 +46,7 @@ public class NinetyDegreeRotate {
 	static void rotate(int a[][])
 	{
 		//this program is a mixture of 2 operations i.e transpose and mirroring of a matrix
+		// this is an optimised way. there is also a long way to do these operations seperately and create 2 different 2D arrays
 		int n = a.length;
 		int b[][] = new int[n][n];
 		for (int i=0; i<n; i++)
