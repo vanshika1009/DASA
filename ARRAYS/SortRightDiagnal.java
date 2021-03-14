@@ -68,4 +68,23 @@ public class SortRightDiagnal
 				}
 			print(a);
 	}
+	/*Use this optimised method if you want to solve it with one loop thus reducing the complexity of the program
+	static void right_diagnal(int a[][])
+	{
+		int i, j=0;
+		int b[] = new int[a.length];
+		
+		for (i=2; i>=0; i--, j++)
+		{
+			b[i] = a[i][j];
+			
+		}
+		Arrays.sort(b);
+		for (i=2, j=0; i>=0; i--, j++)
+		{
+			a[i][j] = b[i];
+					
+		}
+		print(a);
+	}*/
 }
